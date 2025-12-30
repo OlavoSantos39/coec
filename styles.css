@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+#dad7cd #a3b18a #588157 #3a5a40 #344e41 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #344e41;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 70px;
+
+}
+
+nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #588157;
+}
+
+main {
+    padding: 20px;
+    background-color: azure;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+main p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(img/Gemini_Generated_Image_rcq9yzrcq9yzrcq9.png);;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.menu-login {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.menu-login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-login label {
+    display: block;
+    margin-top: 10px;
+}
+
+.menu-login input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.menu-login button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #588157;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-login button:hover {
+    background: #768390; ;
+}
+
+footer {
+    background-color: #344e41;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 92%;
+    margin-left: 50px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+div.document-links {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #728f1c;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+div.document-links h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+div.document-links a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+div.document-links a:hover {
+    color: #344e41;
+}
+form {
+    display: auto;
+    flex-direction: column;   /* itens em coluna */
+    gap: 10px;                /* espaço entre os itens */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+button {
+        padding: 10px;
+        background-color: #344e41;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+button:hover {
+        background-color: #588157;
+}
