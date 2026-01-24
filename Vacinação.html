@@ -4,22 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendário Nacional de Vacinação 2025</title>
-    <link rel="shortcut icon" href="../img/imgfavicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>COEC <img src="img/COEC.png" width="50px" height="50px"></h1>
+         <section class="container">
+    <div id="relogio" text-align="left" style="color: black; "></div>
+     <script>
+    function atualizarRelogio() {
+      const agora = new Date();
+      const opcoesData = { day: '2-digit', month: '2-digit', year: 'numeric' };
+      const data = agora.toLocaleDateString('pt-BR', opcoesData);
+      const hora = agora.toLocaleTimeString('pt-BR');
+      document.getElementById('relogio').textContent = data + " - " + hora;
+    }
+    atualizarRelogio();
+    setInterval(atualizarRelogio, 1000);
+    </script>
+    </div>
+</section>
+        <h1>COEC</h1> <img src="img/logo.png" width="150px" height="150px">
         <h2>Calendário Online de Eventos Comunitários - CALENDÁRIO NACIONAL DE VACINAÇÃO 2025</h2>
         <nav>
-            <a href="principal.html">Início</a>
-            <a href="saude.html">Saúde</a>
-            <a href="educacao.html">Educação e Cultura</a>
-            <a href="lazer.html">Lazer</a>
-            <a href="cadastro_evento.html">Cadastro de Evento</a>
-            <a href="contato.html">Contate-nos</a>
-            <a href="index.html">Sair</a>
+           <button> <a href="principal.html">Início</a></button>
+            <button><a href="saude.html">Saúde</a></button>
+            <button><a href="educacao.html">Educação e Cultura</a></button>
+            <button><a href="lazer.html">Lazer</a></button>
+            <button><a href="cadastro_evento.html">Cadastro de Evento</a></button>
+            <button><a href="contato.html">Contate-nos</a></button>
+            <button><a href="index.html">Sair</a></button>
         </nav>
+        <script>
+        (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow"
+           data-location-id="015284"
+           data-language="PT"
+           data-unit-system="METRIC"
+           data-skin="light"
+           data-widget-type="aqiPollen"
+           style="padding-bottom:22px;position:relative;"
+        >
+          <a
+            href="https://weather.tomorrow.io/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+          >
+            <img
+              alt="Powered by Tomorrow.io"
+              src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+              width="250"
+              height="18"
+            />
+          </a>
+        </div>
     </header>
     <main>
         <h2>Calendário Nacional de Vacinação 2025 &#x1F489;</h2>

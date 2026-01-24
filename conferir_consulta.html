@@ -9,16 +9,33 @@
 </head>
 <body>
     <header>
+         <section class="container">
+    <div id="relogio" text-align="left" style="color: black; "></div>
+     <script>
+    function atualizarRelogio() {
+      const agora = new Date();
+      const opcoesData = { day: '2-digit', month: '2-digit', year: 'numeric' };
+      const data = agora.toLocaleDateString('pt-BR', opcoesData);
+      const hora = agora.toLocaleTimeString('pt-BR');
+      document.getElementById('relogio').textContent = data + " - " + hora;
+    }
+    atualizarRelogio();
+    setInterval(atualizarRelogio, 1000);
+    </script>
+    </div>
+</section>
     <h1>COEC <img src="img/COEC.png" width="50px" height="50px"></h1>
     <h2>Calendário Online de Eventos Comunitários - CONSULTA MÉDICA</h2>
     <nav>
-        <a href="principal.html">Início</a>
-        <a href="saude.html">Saúde</a>
-        <a href="educacao.html">Educação e Cultura</a>
-        <a href="lazer.html">Lazer</a>
-        <a href="cadastro_evento.html">Cadastro de Evento</a>
-        <a href="contato.html">Contate-nos</a>
+        <button><a href="principal.html">Início</a></button>
+        <button><a href="saude.html">Saúde</a></button>
+        <button><a href="educacao.html">Educação e Cultura</a></button>
+        <button><a href="lazer.html">Lazer</a></button>
+        <button><a href="cadastro_evento.html">Cadastro de Evento</a></button>
+        <button><a href="contato.html">Contate-nos</a></button>
         <a href="index.html">Sair</a>
+    </nav>
+    
     </header>
     <main>
         <form>

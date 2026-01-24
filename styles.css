@@ -9,61 +9,73 @@
 }
 
 header {
-    background-color: #344e41;
+    background-color: rgba(255, 255, 255, 0.8);
     color: white;
     padding: 20px;
     text-align: center;
     flex-direction: column;
     border-radius: 15px;
     width: 90%;
-    margin: auto;
+    top: 0%;
+    margin-left: 50px;
+    position:;
 }
 
 header h1 {
     margin-bottom: 10px;
     font-size: 70px;
+    color: #347433;
 
 }
-
+header h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #347433;
+}
 nav {
     margin-top: 10px;
 }
 
 header nav a {
-    color: white;
+    color: #347433;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline
 }
-
+/*----------------------------------------------------------------------------------------*/
 a:hover {
-    color: #588157;
+    color: #347433;
 }
-
+/*----------------------------------------------------------------------------------------*/
 main {
     padding: 20px;
-    background-color: rgb(145, 219, 219);
+    background-color: rgb(255, 255, 255, 0.8);
     width: 90%;
     margin: auto;
     margin-top: 20px;
     border-radius: 15px;
 }
+main h2 {
+    margin-bottom: 20px;
+    color: #347433;
+}
 main p {
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
+    color:black;
 }
-
+/*----------------------------------------------------------------------------------------*/
 body {
     background-image: url(img/Gemini_Generated_Image_rcq9yzrcq9yzrcq9.png);;
     background-size: cover;
     background-position: center;
 }
 
-
+/*----------------------------------------------------------------------------------------*/
 .menu-login {
     background: #fff;
     padding: 20px;
@@ -106,10 +118,10 @@ body {
 .menu-login button:hover {
     background: #768390; ;
 }
-
+/*----------------------------------------------------------------------------------------*/
 footer {
-    background-color: #344e41;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #347433;
     text-align: center;
     padding: 10px;
     bottom: 0;
@@ -118,6 +130,7 @@ footer {
     border-radius: 15px;
     margin-top: 20px;
 }
+/*----------------------------------------------------------------------------------------*/
 div.document-links {
     margin-top: 20px;
     padding: 15px;
@@ -137,6 +150,7 @@ div.document-links a {
 div.document-links a:hover {
     color: #344e41;
 }
+/*----------------------------------------------------------------------------------------*/
 form {
     display: auto;
     flex-direction: column;   /* itens em coluna */
@@ -145,15 +159,27 @@ form {
     border: 1px solid #ccc;
     border-radius: 8px;
 }
+/*----------------------------------------------------------------------------------------*/
 button {
         padding: 10px;
-        background-color: #344e41;
-        color: white;
+        background-color: #a5c5b3;
+        color: rgb(118, 197, 127);
         border: none;
         border-radius: 4px;
         cursor: pointer;
+        transform: translate(-3px, -3px);
+        transition: transform .3s;
 }
 
 button:hover {
         background-color: #588157;
 }
+
+button form {
+    color: #588157;
+}
+
+label {
+    font-weight: bold;
+}
+/*----------------------------------------------------------------------------------------*/
