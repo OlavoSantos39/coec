@@ -6,6 +6,7 @@
     <title>Saúde</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
     <header>
@@ -89,6 +90,29 @@
         <h2>Agende uma Consulta com nossas clinicas conveniadas</h2>
         <a href="consulta.html"><img src="img/medico.jpeg" width="700px" height="200px" alt=""></a>
         <p>Clique na imagem acima para marcar uma consulta.</p>
+        <h2>Calculadora de IMC</h2>
+        <p>Manter o IMC saudável é importante para a sua saúde. Calcule seu Índice de Massa Corporal (IMC) utilizando a ferramenta abaixo:</p>
+        <button onclick="calcularIMC()">Calcular IMC</button>
+            <script>
+            function calcularIMC() {
+            const peso = parseFloat(prompt("Digite seu peso em kg: "));
+            const altura = parseFloat(prompt("Digite sua altura em metros: "));
+            const imc = peso / (altura ** 2);
+                alert("Seu IMC é: " + imc.toFixed(2));    
+            if (imc < 18.5) {
+                alert("Você está abaixo do peso");
+            } else if (imc >= 18.5 && imc < 24.9) {
+                alert("Você está com o peso ideal");
+            } else if (imc >= 25 && imc < 29.9) {
+                alert("Você está com sobrepeso");
+            } else if (imc >= 30 && imc < 39.9) {
+                alert("Você está com obesidade");
+            }
+              else if (imc >= 40) {
+                alert("Você está com obesidade grave");
+            }
+            }
+        </script>
 </body>
     </main>
 <footer>

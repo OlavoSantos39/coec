@@ -37,7 +37,7 @@ nav {
 }
 
 header nav a {
-    color: #347433;
+    color: #cecece;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
@@ -100,7 +100,7 @@ body {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #bdbdbd;
     border-radius: 4px;
 }
 
@@ -109,19 +109,19 @@ body {
     width: 100%;
     padding: 10px;
     background: #588157;
-    color: #fff;
+    color: #cecece;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .menu-login button:hover {
-    background: #768390; ;
+    background: #c4c4c4; ;
 }
 /*----------------------------------------------------------------------------------------*/
 footer {
     background-color: rgba(255, 255, 255, 0.8);
-    color: #347433;
+    color: #035102;
     text-align: center;
     padding: 10px;
     bottom: 0;
@@ -140,7 +140,7 @@ div.document-links {
 }
 div.document-links h3 {
     margin-bottom: 10px;
-    color: white;
+    color: rgb(243, 243, 243);
 }
 div.document-links a {
     color: #fff;
@@ -161,18 +161,18 @@ form {
 }
 /*----------------------------------------------------------------------------------------*/
 button {
-        padding: 10px;
-        background-color: #a5c5b3;
-        color: rgb(118, 197, 127);
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        transform: translate(-3px, -3px);
-        transition: transform .3s;
+    padding: 10px;
+    background-color: #347433;
+    color: rgb(220, 229, 221);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transform: translate(-3px, -3px);
+    transition: transform .3s;
 }
 
 button:hover {
-        background-color: #588157;
+    background-color: #588157;
 }
 
 button form {
