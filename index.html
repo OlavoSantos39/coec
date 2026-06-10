@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COEC-Calendário Online de Eventos Comunitários</title>
+    <link rel="stylesheet" href="Estilos/index.css">
+    <link rel="stylesheet" href="Estilos/resposividade.css">
+    <link rel="shortcut icon" href="imagem/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Login -->
+        <div id="login" class="form active">
+            <form action=""><img src="imagem/logo.png" alt="" width="100px">
+                <h2>Login </h2>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required><br>
+                <button id="btnEntrar">Entrar</button>
+                <p>OU</p>
+                <p>Não tem conta? <span onclick="showForm('register')">Cadastre-se</span></p>
+                <p><span onclick="showForm('forgot')">Esqueceu a senha?</span></p>
+        </div>
+        </form>
+
+        <!-- Cadastro -->
+        <form action="">
+            <div id="register" class="form">
+                <img src="imagem/logo.png" alt="" width="100px">
+                <h2>Cadastro</h2>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required min="8" max=""><br>
+                <button>Cadastrar</button>
+                <p>Já tem conta? <span onclick="showForm('login')">Voltar ao Login</span></p>
+            </div>
+        </form>
+
+        <!-- Esqueci a senha -->
+        <div id="forgot" class="form">
+            <img src="imagem/logo.png" alt="" width="100px">
+            <h2>Recuperar Senha</h2>
+            <input type="email" placeholder="Digite seu email"><br>
+            <button>Enviar link de recuperação</button>
+            <p><span onclick="showForm('login')">Voltar ao Login</span></p>
+        </div>
+
+    </div>
+    <script src="script/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COEC-Calendário Online de Eventos Comunitários</title>
+    <link rel="stylesheet" href="Estilos/principal.css">
+    <link rel="stylesheet" href="Estilos/resposividade.css">
+    <link rel="stylesheet" href="Estilos/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagem/logo.png" alt="">
+        <ul id="nav-links">
+            <li>
+                <a href="#">Inicio</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#">Saúde</a>
+                <a href="#">Contato</a>
+                <a href="index.html">Sair</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="cursos">
+        <p>No COEC você conta com cursos gratuitos para ajudar você com o mercado de trabalho ou para fazer um ENEM</p>
+
+        <h2>Escolha um curso:</h2>
+        <form>
+            <label for="Email"><i class="fa-solid fa-at"></i></label>
+            <input type="email" id="iemail" required placeholder="Seu E-mail"><br>
+
+            <label for="password"><i class="fa-solid fa-key"></i></label>
+            <input type="password" name="senha" id="isenha" required placeholder="Sua senha"><br>
+
+            <input type="radio" id="opcao1" name="opcao" value="opcao1">
+            <label for="opcao1">Redação</label>
+
+            <input type="radio" id="opcao2" name="opcao" value="opcao2">
+            <label for="opcao2">Matemática</label>
+
+            <input type="radio" id="opcao3" name="opcao" value="opcao3">
+            <label for="opcao3">Inglês</label><br><br>
+
+            <input class="btn" type="submit" value="Enviar">
+        </form>
+        <p class="obs"><strong>Obs:</strong>Todos os curso são realizados no centro Comunitário</p>
+
+        <h2>Cadastre sua instituição de ensino:</h2>
+        <form>
+            <label for="text"><i class="fa-solid fa-school"></i></label>
+            <input type="text" id="itexto" required placeholder="Nome da instituição"><br>
+
+            <label for="number"><i class="fa-regular fa-address-card"></i></label>
+            <input type="number" id="inumero" required placeholder="CNPJ da instituição"><br>
+
+            <label for="email"><i class="fa-solid fa-at"></i></label>
+            <input type="email" name="email" id="iemail" required placeholder="Email da instituição">
+
+            <p>Curso oferecido</p>
+
+            <input type="radio" id="opcao1" name="opcao" value="opcao1">
+            <label for="opcao1">Redação</label>
+
+             <input type="radio" id="opcao2" name="opcao" value="opcao2">
+            <label for="opcao2">Matemática</label>
+
+            <input type="radio" id="opcao3" name="opcao" value="opcao3">
+            <label for="opcao3">Inglês</label><br><br>
+
+            <input class="btn" type="submit" value="Cadastrar">
+
+        </form>
+    </section>
+
+    <script src="script/index.js"></script>
+    <script src="script/menu.js"></script>
+</body>
+
+</html>

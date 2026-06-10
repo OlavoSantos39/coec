@@ -1,0 +1,23 @@
+/* Esconde o menu no celular */
+@media (max-width: 768px) {
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+  }
+
+  #nav-links.active {
+    display: flex; /* aparece quando o JS adiciona a classe */
+  }
+
+  .hamburger {
+    display: block; /* mostra o ícone */
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+}
