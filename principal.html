@@ -13,8 +13,11 @@
 
 <body>
     <header>
-        <img src="imagem/logo.png" alt="">
-        <ul id="nav-links">
+        <img src="imagem/logo.png" alt=""><h1>COEC - Calendário Online de Eventos Comunitários</h1>
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul id="nav-links" class="hidden">
             <li>
                 <a href="#">Inicio</a>
                 <a href="#cursos">Cursos</a>
@@ -23,9 +26,6 @@
                 <a href="index.html">Sair</a>
             </li>
         </ul>
-        <div class="hamburger">
-            <i class="fa-solid fa-bars"></i>
-        </div>
     </header>
 
     <section id="cursos">
@@ -68,7 +68,7 @@
             <input type="radio" id="opcao1" name="opcao" value="opcao1">
             <label for="opcao1">Redação</label>
 
-             <input type="radio" id="opcao2" name="opcao" value="opcao2">
+            <input type="radio" id="opcao2" name="opcao" value="opcao2">
             <label for="opcao2">Matemática</label>
 
             <input type="radio" id="opcao3" name="opcao" value="opcao3">
@@ -77,10 +77,19 @@
             <input class="btn" type="submit" value="Cadastrar">
 
         </form>
+
+        <p style="margin-top: 20px;"><strong>Obs:</strong>Ao cadastrar sua instituição, ela terá que que cumprir a carga
+            horária <br>
+            minima de 40 horas aulas de curso gratuito</p>
     </section>
+
+    <secton id="saude">
+
+    </secton>
 
     <script src="script/index.js"></script>
     <script src="script/menu.js"></script>
+
 </body>
 
 </html>

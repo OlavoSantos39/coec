@@ -10,14 +10,17 @@
         width: 100px;
     }
 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
+    header h1 {
+        text-align: center;
     }
 
     header ul li {
-        display: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header ul li a {
+        width: 70px;
     }
 
     section#cursos form {
@@ -25,4 +28,5 @@
         flex-direction: column;
         width: 100%;
     }
+
 }

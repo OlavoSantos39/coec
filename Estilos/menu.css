@@ -1,23 +1,27 @@
-/* Esconde o menu no celular */
-@media (max-width: 768px) {
-  #nav-links {
-    display: none;
-    flex-direction: column;
-    background: #333;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    padding: 10px;
-  }
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  display: block; /* visível no desktop */
+}
 
-  #nav-links.active {
-    display: flex; /* aparece quando o JS adiciona a classe */
-  }
+#nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .hamburger {
-    display: block; /* mostra o ícone */
-    cursor: pointer;
-    color: white;
-    font-size: 24px;
-  }
+#nav-links li {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+#nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
 }
