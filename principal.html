@@ -21,7 +21,7 @@
             <li>
                 <a href="#">Inicio</a>
                 <a href="#cursos">Cursos</a>
-                <a href="#">Saúde</a>
+                <a href="#saude">Saúde</a>
                 <a href="#">Contato</a>
                 <a href="index.html">Sair</a>
             </li>
@@ -33,8 +33,11 @@
 
         <h2>Escolha um curso:</h2>
         <form>
-            <label for="Email"><i class="fa-solid fa-at"></i></label>
-            <input type="email" id="iemail" required placeholder="Seu E-mail"><br>
+            <label for="name"><i class="fa-solid fa-person"></label></i>
+            <input type="text" required placeholder="Nome completo"><br>
+
+            <label for="name"><i class="fa-regular fa-address-card"></i></label>
+            <input type="number" required placeholder="CPF"><br>
 
             <input type="radio" id="opcao1" name="opcao" value="opcao1">
             <label for="opcao1">Redação</label>
@@ -57,10 +60,7 @@
             <label for="number"><i class="fa-regular fa-address-card"></i></label>
             <input type="number" id="inumero" required placeholder="CNPJ da instituição"><br>
 
-            <label for="email"><i class="fa-solid fa-at"></i></label>
-            <input type="email" name="email" id="iemail" required placeholder="Email da instituição">
-
-            <p>Curso oferecido</p>
+            <p class="obs"><strong>Curso oferecido:</strong></p>
 
             <input type="radio" id="opcao1" name="opcao" value="opcao1">
             <label for="opcao1">Redação</label>
@@ -80,8 +80,52 @@
             minima de 40 horas aulas de curso gratuito</p>
     </section>
 
-    <secton id="saude">
+    <section id="saude">
+        <p>No <strong>COEC</strong> você também pode contar com exames para cuidar da sua saúde.</p>
+        <h2>Marque sua consulta:</h2>
+        <form>
+            <label for="name"><i class="fa-solid fa-person"></label></i>
+            <input type="text" required placeholder="Nome completo"><br>
 
+            <label for="number"><i class="fa-regular fa-address-card"></i></label>
+            <input type="number" required placeholder="CPF" max="11"><br>
+
+            <p class="obs"><strong>Escolha a especialidade:</strong></p>
+
+             <input type="radio" id="opcao1" name="opcao" value="opcao1">
+            <label for="opcao1">Pediatra</label>
+
+            <input type="radio" id="opcao2" name="opcao" value="opcao2">
+            <label for="opcao2">Ortopedista</label>
+
+            <input type="radio" id="opcao3" name="opcao" value="opcao3">
+            <label for="opcao3">Psiquiatra</label><br><br>
+
+            <input class="btn" type="submit" value="Marcar">
+        </form>
+
+        <p class="obs">Todos os exames serão realizados gratuitamente no polo de saúde.</p>
+
+        <h2>Cadastre sua clinica</h2>
+        <form>
+            <label for="text"><i class="fa-solid fa-hospital"></i></label>
+            <input type="text" required placeholder="Nome da clinica"><br>
+
+             <label for="number"><i class="fa-regular fa-address-card"></i></label>
+            <input type="number" id="inumero" required placeholder="CNPJ da instituição"><br>
+            <p class="obs"><strong>Especialidade oferecida:</strong></p>
+
+             <input type="radio" id="opcao1" name="opcao" value="opcao1">
+            <label for="opcao1">Pediatra</label>
+
+            <input type="radio" id="opcao2" name="opcao" value="opcao2">
+            <label for="opcao2">Ortopedista</label>
+
+            <input type="radio" id="opcao3" name="opcao" value="opcao3">
+            <label for="opcao3">Psiquiatra</label><br><br>
+
+            <input class="btn" type="submit" value="Cadastrar">
+        </form>
     </secton>
 
     <script src="script/index.js"></script>
