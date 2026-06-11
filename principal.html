@@ -22,7 +22,7 @@
                 <a href="#">Inicio</a>
                 <a href="#cursos">Cursos</a>
                 <a href="#saude">Saúde</a>
-                <a href="#">Contato</a>
+                <a href="#contato">Contato</a>
                 <a href="index.html">Sair</a>
             </li>
         </ul>
@@ -34,10 +34,12 @@
         <h2>Escolha um curso:</h2>
         <form>
             <label for="name"><i class="fa-solid fa-person"></label></i>
-            <input type="text" required placeholder="Nome completo"><br>
+            <input class="text" type="text" required placeholder="Nome completo"><br>
 
             <label for="name"><i class="fa-regular fa-address-card"></i></label>
-            <input type="number" required placeholder="CPF"><br>
+            <input class="text" type="number" required placeholder="CPF"><br>
+
+            <p class="obs"><strong>Cursos</strong></p>
 
             <input type="radio" id="opcao1" name="opcao" value="opcao1">
             <label for="opcao1">Redação</label>
@@ -55,10 +57,10 @@
         <h2>Cadastre sua instituição de ensino:</h2>
         <form>
             <label for="text"><i class="fa-solid fa-school"></i></label>
-            <input type="text" id="itexto" required placeholder="Nome da instituição"><br>
+            <input class="text" type="text" id="itexto" required placeholder="Nome da instituição"><br>
 
             <label for="number"><i class="fa-regular fa-address-card"></i></label>
-            <input type="number" id="inumero" required placeholder="CNPJ da instituição"><br>
+            <input class="text" type="number" id="inumero" required placeholder="CNPJ da instituição"><br>
 
             <p class="obs"><strong>Curso oferecido:</strong></p>
 
@@ -85,10 +87,10 @@
         <h2>Marque sua consulta:</h2>
         <form>
             <label for="name"><i class="fa-solid fa-person"></label></i>
-            <input type="text" required placeholder="Nome completo"><br>
+            <input class="saude" type="text" required placeholder="Nome completo"><br>
 
             <label for="number"><i class="fa-regular fa-address-card"></i></label>
-            <input type="number" required placeholder="CPF" max="11"><br>
+            <input class="saude" type="number" required placeholder="CPF" max="11"><br>
 
             <p class="obs"><strong>Escolha a especialidade:</strong></p>
 
@@ -109,10 +111,10 @@
         <h2>Cadastre sua clinica</h2>
         <form>
             <label for="text"><i class="fa-solid fa-hospital"></i></label>
-            <input type="text" required placeholder="Nome da clinica"><br>
+            <input class="saude" type="text" required placeholder="Nome da clinica"><br>
 
              <label for="number"><i class="fa-regular fa-address-card"></i></label>
-            <input type="number" id="inumero" required placeholder="CNPJ da instituição"><br>
+            <input class="saude" type="number" id="inumero" required placeholder="CNPJ da instituição"><br>
             <p class="obs"><strong>Especialidade oferecida:</strong></p>
 
              <input type="radio" id="opcao1" name="opcao" value="opcao1">
@@ -126,7 +128,29 @@
 
             <input class="btn" type="submit" value="Cadastrar">
         </form>
-    </secton>
+        <p class="obs"><strong>Obs:</strong>Quinicas cadastradas terão que realizar pelo menos 20 atendimentos diarios <br>
+             gratuitos durante uma semana.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Fale conosco</h2>
+        <form>
+            <label for="text"><i class="fa-solid fa-at"></i></label>
+            <input type="email" required placeholder="Seu email"><br>
+
+            <textarea name="text" id="itext" rows="10" cols="50" placeholder="Sua mensagem..."></textarea>
+            <input type="submit" class="btn" value="Enviar">
+            <div class="icon">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p class="obs">&copy COEC - Todos direitos reservados a equipe OMEGA - TSI</p>
+        <img src="imagem/logo.png" alt="">
+    </footer>
 
     <script src="script/index.js"></script>
     <script src="script/menu.js"></script>

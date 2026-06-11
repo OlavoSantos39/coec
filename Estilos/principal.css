@@ -26,12 +26,12 @@ header {
 }
 
 header img {
-    width: 200px;
+    width: 100px;
 }
 
 header ul {
     display: flex;
-    
+
 }
 
 header ul li {
@@ -57,9 +57,9 @@ header ul li a:hover {
 }
 
 .hamburger {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 section#cursos {
@@ -85,8 +85,9 @@ section#cursos form {
     width: 400px;
 }
 
-section#cursos form input {
+section#cursos form input.text {
     margin-top: 10px;
+    width: 70%;
 }
 
 section#cursos form input.btn {
@@ -132,12 +133,13 @@ section#saude form {
     width: 400px;
 }
 
-section#saude form input {
+section#saude form input.saude {
     margin-top: 10px;
+    width: 70%;
 }
 
 section#saude form input.btn {
-     width: 100px;
+    width: 100px;
     padding: 8px;
     border-radius: 20px;
     border: none;
@@ -147,7 +149,81 @@ section#saude form input.btn {
 }
 
 section#saude form input.btn:hover {
-     background-color: blue;
+    background-color: blue;
     transform: translateY(-8px);
     box-shadow: 2px 2px 4px white;
+}
+
+section#contato {
+    background-color: rgba(145, 235, 235, 0.597);
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+section#contato h2 {
+    margin-bottom: 15px;
+}
+
+section#contato form {
+    margin: auto;
+    background-color: lightcyan;
+    padding: 8px;
+    align-items: center;
+    width: 400px;
+}
+
+section#contato form input {
+    margin-bottom: 15px;
+    width: 70%;
+}
+
+section#contato form input.btn {
+    width: 100px;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(105, 105, 232);
+    color: white;
+    margin-top: 15px;
+}
+
+section#contato form input.btn:hover {
+    background-color: blue;
+    transform: translateY(-8px);
+    box-shadow: 2px 2px 4px white;
+}
+
+.icon {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-evenly;
+}
+
+.icon a{
+    padding: 15px;
+    background-color: rgb(105, 105, 232);
+    color: white;
+    border-radius: 20px;
+}
+
+.icon a:hover {
+    background-color: blue;
+    transform: translateY(-8px);
+    box-shadow: 2px 2px 4px white;
+}
+
+footer {
+    background-color: rgba(145, 235, 235, 0.597);
+    padding: 15px;
+    text-align: center;
+}
+
+footer img {
+    width: 100px;
 }
