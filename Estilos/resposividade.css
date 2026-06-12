@@ -29,6 +29,12 @@
         width: 100%;
     }
 
+    section#cursos h2 {
+        width: 100%;
+    }
+
+
+
     section#saude form {
         display: flex;
         flex-direction: column;
